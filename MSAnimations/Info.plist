@@ -38,5 +38,31 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>akamaihd.net</key>
+			<dict/>
+			<key>facebook.com</key>
+			<dict/>
+			<key>fbcdn.net</key>
+			<dict/>
+			<key>qq.com</key>
+			<dict/>
+			<key>sina.com.cn</key>
+			<dict/>
+			<key>twitter.com</key>
+			<dict/>
+			<key>weibo.cn</key>
+			<dict/>
+			<key>weibo.com</key>
+			<dict/>
+		</dict>
+	</dict>
 </dict>
 </plist>

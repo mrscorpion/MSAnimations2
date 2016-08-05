@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A699F20D1D54C106005F7B44 /* StretchyHeader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A699F20C1D54C106005F7B44 /* StretchyHeader.storyboard */; };
+		A699F20F1D54C154005F7B44 /* StretchyHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699F20E1D54C154005F7B44 /* StretchyHeaderTVC.swift */; };
+		A699F2111D54C1B8005F7B44 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699F2101D54C1B8005F7B44 /* Place.swift */; };
 		A6A256631D546D6600BF963A /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A256621D546D6600BF963A /* GlobalFunctions.swift */; };
 		A6A256661D546EED00BF963A /* PullRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A256651D546EED00BF963A /* PullRefreshView.swift */; };
 		A6A256691D54738C00BF963A /* SwiftExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A256681D54738C00BF963A /* SwiftExtentions.swift */; };
@@ -29,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A699F20C1D54C106005F7B44 /* StretchyHeader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StretchyHeader.storyboard; sourceTree = "<group>"; };
+		A699F20E1D54C154005F7B44 /* StretchyHeaderTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StretchyHeaderTVC.swift; sourceTree = "<group>"; };
+		A699F2101D54C1B8005F7B44 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		A6A256621D546D6600BF963A /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		A6A256651D546EED00BF963A /* PullRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRefreshView.swift; sourceTree = "<group>"; };
 		A6A256681D54738C00BF963A /* SwiftExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExtentions.swift; sourceTree = "<group>"; };
@@ -62,6 +68,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A699F20A1D54C0C4005F7B44 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				A699F20B1D54C0C4005F7B44 /* StretchyHeader */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		A699F20B1D54C0C4005F7B44 /* StretchyHeader */ = {
+			isa = PBXGroup;
+			children = (
+				A699F20C1D54C106005F7B44 /* StretchyHeader.storyboard */,
+				A699F20E1D54C154005F7B44 /* StretchyHeaderTVC.swift */,
+				A699F2101D54C1B8005F7B44 /* Place.swift */,
+			);
+			path = StretchyHeader;
+			sourceTree = "<group>";
+		};
 		A6A256611D546D3B00BF963A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +131,7 @@
 		A6CD92A51D54228100A9970C /* MSAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				A699F20A1D54C0C4005F7B44 /* Animations */,
 				A6CD92A61D54228100A9970C /* AppDelegate.swift */,
 				A6CD92C61D5424E800A9970C /* MSMainTVC.swift */,
 				A6A256671D54730E00BF963A /* Extensions */,
@@ -215,6 +240,7 @@
 				A6CD92B11D54228100A9970C /* LaunchScreen.storyboard in Resources */,
 				A6CD92AE1D54228100A9970C /* Assets.xcassets in Resources */,
 				A6CD92AC1D54228100A9970C /* Main.storyboard in Resources */,
+				A699F20D1D54C106005F7B44 /* StretchyHeader.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,10 +258,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A699F20F1D54C154005F7B44 /* StretchyHeaderTVC.swift in Sources */,
 				A6CD92C71D5424E800A9970C /* MSMainTVC.swift in Sources */,
 				A6CD92A71D54228100A9970C /* AppDelegate.swift in Sources */,
 				A6A256631D546D6600BF963A /* GlobalFunctions.swift in Sources */,
 				A6A256661D546EED00BF963A /* PullRefreshView.swift in Sources */,
+				A699F2111D54C1B8005F7B44 /* Place.swift in Sources */,
 				A6A256691D54738C00BF963A /* SwiftExtentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
