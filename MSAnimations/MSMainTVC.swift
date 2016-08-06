@@ -21,7 +21,7 @@ class MSMainTVC: UITableViewController, PullRefreshViewDelegate {
     // MARK: - Properties
     var pullRefreshView: PullRefreshView!
     let kPullRefreshViewHeight: CGFloat = UIScreen.mainScreen().bounds.size.height * 0.22
-    let items = ["PullToRefreshAnimation", "StretchyHeaderAnimation"]
+    let items = ["PullToRefreshAnimation", "StretchyHeaderAnimation", "GradientVC"]
     
     
     // MARK: - View Life Cycle
@@ -53,9 +53,17 @@ class MSMainTVC: UITableViewController, PullRefreshViewDelegate {
     // MARK: - UITableViewDelegate
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch indexPath.row {
+        case 0:
+            self.navigationController?.pushViewController(PullToRefreshVC(), animated:true)
+            break
+            
         case 1:
             let stretchyTVC = UIStoryboard(name: "StretchyHeader", bundle: nil).instantiateViewControllerWithIdentifier("StretchyHeader") as! StretchyHeaderTVC
             self.navigationController?.pushViewController(stretchyTVC, animated: true)
+            break
+            
+        case 2:
+            self.navigationController?.pushViewController(GradientVC(), animated: true)
             break
             
         default:

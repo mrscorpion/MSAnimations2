@@ -19,6 +19,13 @@
 		A6CD92B11D54228100A9970C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CD92AF1D54228100A9970C /* LaunchScreen.storyboard */; };
 		A6CD92BC1D54228100A9970C /* MSAnimationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD92BB1D54228100A9970C /* MSAnimationsTests.swift */; };
 		A6CD92C71D5424E800A9970C /* MSMainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD92C61D5424E800A9970C /* MSMainTVC.swift */; };
+		A6EFBD251D55829800BB19F3 /* GradientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBD241D55829800BB19F3 /* GradientVC.swift */; };
+		A6EFBD271D55847B00BB19F3 /* LoadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBD261D55847B00BB19F3 /* LoadingLabel.swift */; };
+		A6EFBD291D55B77600BB19F3 /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBD281D55B77600BB19F3 /* BallView.swift */; };
+		A6EFBD2B1D55B77C00BB19F3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBD2A1D55B77C00BB19F3 /* HeaderView.swift */; };
+		A6EFBD2D1D55B78300BB19F3 /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBD2C1D55B78300BB19F3 /* WaveView.swift */; };
+		A6EFBD2F1D55B78D00BB19F3 /* PullToRefleshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBD2E1D55B78D00BB19F3 /* PullToRefleshView.swift */; };
+		A6EFBD331D55B8F000BB19F3 /* PullToRefreshVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBD321D55B8F000BB19F3 /* PullToRefreshVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		A6CD92BB1D54228100A9970C /* MSAnimationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAnimationsTests.swift; sourceTree = "<group>"; };
 		A6CD92BD1D54228100A9970C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6CD92C61D5424E800A9970C /* MSMainTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSMainTVC.swift; sourceTree = "<group>"; };
+		A6EFBD241D55829800BB19F3 /* GradientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientVC.swift; sourceTree = "<group>"; };
+		A6EFBD261D55847B00BB19F3 /* LoadingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingLabel.swift; sourceTree = "<group>"; };
+		A6EFBD281D55B77600BB19F3 /* BallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
+		A6EFBD2A1D55B77C00BB19F3 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		A6EFBD2C1D55B78300BB19F3 /* WaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		A6EFBD2E1D55B78D00BB19F3 /* PullToRefleshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefleshView.swift; sourceTree = "<group>"; };
+		A6EFBD321D55B8F000BB19F3 /* PullToRefreshVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,8 @@
 		A699F20A1D54C0C4005F7B44 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				A6EFBD231D5581B900BB19F3 /* GradientAnimation */,
+				A6EFBD211D5580F700BB19F3 /* PullToRefresh */,
 				A699F20B1D54C0C4005F7B44 /* StretchyHeader */,
 			);
 			path = Animations;
@@ -137,10 +153,7 @@
 				A6A256671D54730E00BF963A /* Extensions */,
 				A6A256641D546EB500BF963A /* Views */,
 				A6A256611D546D3B00BF963A /* Helpers */,
-				A6CD92AA1D54228100A9970C /* Main.storyboard */,
-				A6CD92AD1D54228100A9970C /* Assets.xcassets */,
-				A6CD92AF1D54228100A9970C /* LaunchScreen.storyboard */,
-				A6CD92B21D54228100A9970C /* Info.plist */,
+				A6EFBD221D55811C00BB19F3 /* Others */,
 			);
 			path = MSAnimations;
 			sourceTree = "<group>";
@@ -152,6 +165,38 @@
 				A6CD92BD1D54228100A9970C /* Info.plist */,
 			);
 			path = MSAnimationsTests;
+			sourceTree = "<group>";
+		};
+		A6EFBD211D5580F700BB19F3 /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				A6EFBD321D55B8F000BB19F3 /* PullToRefreshVC.swift */,
+				A6EFBD281D55B77600BB19F3 /* BallView.swift */,
+				A6EFBD2A1D55B77C00BB19F3 /* HeaderView.swift */,
+				A6EFBD2C1D55B78300BB19F3 /* WaveView.swift */,
+				A6EFBD2E1D55B78D00BB19F3 /* PullToRefleshView.swift */,
+			);
+			path = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		A6EFBD221D55811C00BB19F3 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A6CD92AA1D54228100A9970C /* Main.storyboard */,
+				A6CD92AD1D54228100A9970C /* Assets.xcassets */,
+				A6CD92AF1D54228100A9970C /* LaunchScreen.storyboard */,
+				A6CD92B21D54228100A9970C /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		A6EFBD231D5581B900BB19F3 /* GradientAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A6EFBD241D55829800BB19F3 /* GradientVC.swift */,
+				A6EFBD261D55847B00BB19F3 /* LoadingLabel.swift */,
+			);
+			path = GradientAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,10 +305,17 @@
 			files = (
 				A699F20F1D54C154005F7B44 /* StretchyHeaderTVC.swift in Sources */,
 				A6CD92C71D5424E800A9970C /* MSMainTVC.swift in Sources */,
+				A6EFBD251D55829800BB19F3 /* GradientVC.swift in Sources */,
+				A6EFBD291D55B77600BB19F3 /* BallView.swift in Sources */,
 				A6CD92A71D54228100A9970C /* AppDelegate.swift in Sources */,
 				A6A256631D546D6600BF963A /* GlobalFunctions.swift in Sources */,
+				A6EFBD2F1D55B78D00BB19F3 /* PullToRefleshView.swift in Sources */,
 				A6A256661D546EED00BF963A /* PullRefreshView.swift in Sources */,
+				A6EFBD2D1D55B78300BB19F3 /* WaveView.swift in Sources */,
+				A6EFBD2B1D55B77C00BB19F3 /* HeaderView.swift in Sources */,
+				A6EFBD271D55847B00BB19F3 /* LoadingLabel.swift in Sources */,
 				A699F2111D54C1B8005F7B44 /* Place.swift in Sources */,
+				A6EFBD331D55B8F000BB19F3 /* PullToRefreshVC.swift in Sources */,
 				A6A256691D54738C00BF963A /* SwiftExtentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
