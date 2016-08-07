@@ -28,19 +28,19 @@ class BallView: UIView {
         
         super.init(frame:frame)
         
-        for var i = 3;i >= 0;i -= 1 {
+        for var i = 3;i >= 0; i -= 1 {
             circleMoveView = CircleMoveView.init(frame: frame,circleSize: circleSize, moveUpDist: moveUpDist, color: color)
             circleMoveView!.tag = 100 + i
             self.addSubview(circleMoveView!)
             
             self.didStarUpAnimation = {
-                for var i = 3;i >= 0;i-- {
+                for var i = 3;i >= 0; i -= 1 {
                     self.circleMoveView = self.viewWithTag(100 + i) as? CircleMoveView
                     self.circleMoveView!.circleLayer.startAnimationUp(ballTag: i)
                 }
             }
             self.endFloatAnimation = {
-                for var i = 3;i >= 0;i-- {
+                for var i = 3;i >= 0; i -= 1 {
                     self.circleMoveView = self.viewWithTag(100 + i) as? CircleMoveView
                     self.circleMoveView!.circleLayer.stopFloatAnimation(ballTag: i)
                 }

@@ -21,7 +21,7 @@ class MSMainTVC: UITableViewController, PullRefreshViewDelegate {
     // MARK: - Properties
     var pullRefreshView: PullRefreshView!
     let kPullRefreshViewHeight: CGFloat = UIScreen.mainScreen().bounds.size.height * 0.22
-    let items = ["PullToRefreshAnimation", "StretchyHeaderAnimation", "GradientVC", "LockScreenAnimation"]
+    let items = ["MSPullToRefreshAnimation", "MSStretchyHeaderAnimation", "MSGradientVC", "MSLockScreenAnimation", "MSEraseImageAnimation"]
     
     
     // MARK: - View Life Cycle
@@ -59,7 +59,7 @@ class MSMainTVC: UITableViewController, PullRefreshViewDelegate {
             
         case 1:
             let stretchyTVC = UIStoryboard(name: "StretchyHeader", bundle: nil).instantiateViewControllerWithIdentifier("StretchyHeader") as! StretchyHeaderTVC
-            self.navigationController?.pushViewController(stretchyTVC, animated: true)
+            self.presentViewController(stretchyTVC, animated: true, completion: nil)
             break
             
         case 2:
@@ -67,7 +67,12 @@ class MSMainTVC: UITableViewController, PullRefreshViewDelegate {
             break
             
         case 3:
-            self.navigationController?.pushViewController(MSUnlockVC(), animated: true)
+            self.presentViewController(MSUnlockVC(), animated: true, completion: nil)
+            break
+            
+        case 4:
+//            self.navigationController?.pushViewController(eraseImageViewController(), animated: true)
+            self .presentViewController(eraseImageViewController(), animated: true, completion: nil)
             break
             
         default:

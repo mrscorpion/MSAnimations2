@@ -38,7 +38,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="0Vy-LM-0fx" rowHeight="80" style="IBUITableViewCellStyleDefault" id="zCF-Vz-dX4">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StrtchyCell" textLabel="0Vy-LM-0fx" rowHeight="80" style="IBUITableViewCellStyleDefault" id="zCF-Vz-dX4">
                                 <rect key="frame" x="0.0" y="328" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zCF-Vz-dX4" id="TCb-ZU-bEc">

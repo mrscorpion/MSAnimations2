@@ -2,8 +2,8 @@
 //  LoadingLabel.swift
 //  GradientAnimation
 //
-//  Created by Larry Natalicio on 4/23/16.
-//  Copyright © 2016 Larry Natalicio. All rights reserved.
+//  Created by mr.scorpion on 4/23/16.
+//  Copyright © 2016 mr.scorpion. All rights reserved.
 //
 
 import UIKit
@@ -12,7 +12,6 @@ import UIKit
 class LoadingLabel: UIView {
     
     // MARK: - Types
-    
     struct Constants {
         struct Fonts {
             static let loadingLabel = "HelveticaNeue-UltraLight"
@@ -20,7 +19,6 @@ class LoadingLabel: UIView {
     }
     
     // MARK: - Properties
-
     let gradientLayer: CAGradientLayer = {
         let gradientLayer = CAGradientLayer()
         

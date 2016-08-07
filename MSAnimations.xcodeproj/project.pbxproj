@@ -19,6 +19,8 @@
 		A6CD92B11D54228100A9970C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CD92AF1D54228100A9970C /* LaunchScreen.storyboard */; };
 		A6CD92BC1D54228100A9970C /* MSAnimationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD92BB1D54228100A9970C /* MSAnimationsTests.swift */; };
 		A6CD92C71D5424E800A9970C /* MSMainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD92C61D5424E800A9970C /* MSMainTVC.swift */; };
+		A6E06B881D5761D400DC5CA7 /* eraseImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E06B851D5761D400DC5CA7 /* eraseImageViewController.m */; };
+		A6E06B891D5761D400DC5CA7 /* eraseImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E06B871D5761D400DC5CA7 /* eraseImageViewController.xib */; };
 		A6EFBD251D55829800BB19F3 /* GradientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBD241D55829800BB19F3 /* GradientVC.swift */; };
 		A6EFBD271D55847B00BB19F3 /* LoadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBD261D55847B00BB19F3 /* LoadingLabel.swift */; };
 		A6EFBD291D55B77600BB19F3 /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBD281D55B77600BB19F3 /* BallView.swift */; };
@@ -57,6 +59,10 @@
 		A6CD92BB1D54228100A9970C /* MSAnimationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAnimationsTests.swift; sourceTree = "<group>"; };
 		A6CD92BD1D54228100A9970C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6CD92C61D5424E800A9970C /* MSMainTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSMainTVC.swift; sourceTree = "<group>"; };
+		A6E06B841D5761D300DC5CA7 /* MSAnimations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSAnimations-Bridging-Header.h"; sourceTree = "<group>"; };
+		A6E06B851D5761D400DC5CA7 /* eraseImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eraseImageViewController.m; sourceTree = "<group>"; };
+		A6E06B861D5761D400DC5CA7 /* eraseImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eraseImageViewController.h; sourceTree = "<group>"; };
+		A6E06B871D5761D400DC5CA7 /* eraseImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = eraseImageViewController.xib; sourceTree = "<group>"; };
 		A6EFBD241D55829800BB19F3 /* GradientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientVC.swift; sourceTree = "<group>"; };
 		A6EFBD261D55847B00BB19F3 /* LoadingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingLabel.swift; sourceTree = "<group>"; };
 		A6EFBD281D55B77600BB19F3 /* BallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 		A699F20A1D54C0C4005F7B44 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				A6E06B831D5761BF00DC5CA7 /* EraseImageAnimation */,
 				A6EFBD211D5580F700BB19F3 /* PullToRefresh */,
 				A699F20B1D54C0C4005F7B44 /* StretchyHeader */,
 				A6EFBD231D5581B900BB19F3 /* GradientAnimation */,
@@ -170,6 +177,17 @@
 				A6CD92BD1D54228100A9970C /* Info.plist */,
 			);
 			path = MSAnimationsTests;
+			sourceTree = "<group>";
+		};
+		A6E06B831D5761BF00DC5CA7 /* EraseImageAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A6E06B861D5761D400DC5CA7 /* eraseImageViewController.h */,
+				A6E06B851D5761D400DC5CA7 /* eraseImageViewController.m */,
+				A6E06B871D5761D400DC5CA7 /* eraseImageViewController.xib */,
+				A6E06B841D5761D300DC5CA7 /* MSAnimations-Bridging-Header.h */,
+			);
+			path = EraseImageAnimation;
 			sourceTree = "<group>";
 		};
 		A6EFBD211D5580F700BB19F3 /* PullToRefresh */ = {
@@ -297,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6CD92B11D54228100A9970C /* LaunchScreen.storyboard in Resources */,
+				A6E06B891D5761D400DC5CA7 /* eraseImageViewController.xib in Resources */,
 				A6F9D47F1D570B70009EFFE9 /* MSUnlockVC.xib in Resources */,
 				A6CD92AE1D54228100A9970C /* Assets.xcassets in Resources */,
 				A6CD92AC1D54228100A9970C /* Main.storyboard in Resources */,
@@ -325,6 +344,7 @@
 				A6CD92A71D54228100A9970C /* AppDelegate.swift in Sources */,
 				A6A256631D546D6600BF963A /* GlobalFunctions.swift in Sources */,
 				A6EFBD2F1D55B78D00BB19F3 /* PullToRefleshView.swift in Sources */,
+				A6E06B881D5761D400DC5CA7 /* eraseImageViewController.m in Sources */,
 				A6A256661D546EED00BF963A /* PullRefreshView.swift in Sources */,
 				A6EFBD2D1D55B78300BB19F3 /* WaveView.swift in Sources */,
 				A6EFBD2B1D55B77C00BB19F3 /* HeaderView.swift in Sources */,
@@ -461,10 +481,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MSAnimations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mr.scorpion.MSAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MSAnimations/Animations/EraseImageAnimation/MSAnimations-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -472,10 +495,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MSAnimations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mr.scorpion.MSAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MSAnimations/Animations/EraseImageAnimation/MSAnimations-Bridging-Header.h";
 			};
 			name = Release;
 		};

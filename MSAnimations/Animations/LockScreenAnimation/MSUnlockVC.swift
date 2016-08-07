@@ -39,8 +39,15 @@ class MSUnlockVC: UIViewController {
         self.view.addSubview(bg)
         self.view.sendSubviewToBack(bg)
         
-        // 开锁
-        openLock()
+        // 单指双击退出
+        let singleFingerTwo = UITapGestureRecognizer(target: self, action: #selector(StretchyHeaderTVC.dismiss))
+        singleFingerTwo.numberOfTapsRequired = 2
+        self.view.addGestureRecognizer(singleFingerTwo)
+        
+        //  单指单击开锁
+        let singleFingerOne = UITapGestureRecognizer(target: self, action: #selector(openLock))
+        singleFingerOne.numberOfTapsRequired = 1
+        self.view.addGestureRecognizer(singleFingerOne)
     }
     
     // MARK: Convenience
@@ -63,6 +70,10 @@ class MSUnlockVC: UIViewController {
                         self.bottomLock.removeFromSuperview()
                 })
         })
+    }
+    
+    func dismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     // MARK: - Status Bar

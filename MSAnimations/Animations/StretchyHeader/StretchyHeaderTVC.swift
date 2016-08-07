@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StretchyHeaderTVC: UITableViewController {
+class StretchyHeaderTVC: UITableViewController, UIGestureRecognizerDelegate {
 
     // MARK: - Properties
     let tableHeaderHeight: CGFloat = 300.0
@@ -38,6 +38,11 @@ class StretchyHeaderTVC: UITableViewController {
         tableView.contentInset = UIEdgeInsets(top: tableHeaderHeight, left: 0, bottom: 0, right: 0)
         tableView.contentOffset = CGPoint(x: 0, y: -tableHeaderHeight)
         updateHeaderView()
+        
+        // 双击退出
+        let singleFingerTwo = UITapGestureRecognizer(target: self, action: #selector(StretchyHeaderTVC.dismiss))
+        singleFingerTwo.numberOfTapsRequired = 2
+        self.view.addGestureRecognizer(singleFingerTwo)
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,6 +73,10 @@ class StretchyHeaderTVC: UITableViewController {
             headerRect.size.height = -tableView.contentOffset.y
         }
         headerView.frame = headerRect
+    }
+    
+    func dismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     // MARK: - Satus Bar
