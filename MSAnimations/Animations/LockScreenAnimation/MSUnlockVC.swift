@@ -45,7 +45,7 @@ class MSUnlockVC: UIViewController {
     
     // MARK: Convenience
     func openLock() {
-        UIView.animateWithDuration(0.4, delay: 5.0, options: [], animations: {
+        UIView.animateWithDuration(0.4, delay: 1.0, options: [], animations: {
             // Rotate keyhole.
             self.lockKeyhole.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
             }, completion: { _ in

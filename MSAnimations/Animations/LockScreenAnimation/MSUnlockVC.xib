@@ -7,6 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSUnlockVC" customModule="MSAnimations" customModuleProvider="target">
             <connections>
+                <outlet property="bottomLock" destination="gfN-aS-V0E" id="C8D-Xn-xaD"/>
+                <outlet property="lockBorder" destination="iMm-Mp-fiG" id="Atx-2y-T5r"/>
+                <outlet property="lockKeyhole" destination="m0r-zf-ALi" id="5zO-Yu-EYa"/>
+                <outlet property="topLock" destination="Fvy-eJ-ait" id="Kp2-1e-01U"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,18 +25,18 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomLock" translatesAutoresizingMaskIntoConstraints="NO" id="gfN-aS-V0E">
                     <rect key="frame" x="0.0" y="284" width="4184" height="284"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockKeyhole" translatesAutoresizingMaskIntoConstraints="NO" id="m0r-zf-ALi">
-                    <rect key="frame" x="135" y="259" width="50" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="GfP-Gh-6TN"/>
-                        <constraint firstAttribute="height" constant="50" id="piH-KZ-htF"/>
-                    </constraints>
-                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockBorder" translatesAutoresizingMaskIntoConstraints="NO" id="iMm-Mp-fiG">
                     <rect key="frame" x="120" y="244" width="80" height="80"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="oz5-F6-vcb"/>
                         <constraint firstAttribute="width" constant="80" id="vb4-nn-1GQ"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockKeyhole" translatesAutoresizingMaskIntoConstraints="NO" id="m0r-zf-ALi">
+                    <rect key="frame" x="135" y="259" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="GfP-Gh-6TN"/>
+                        <constraint firstAttribute="height" constant="50" id="piH-KZ-htF"/>
                     </constraints>
                 </imageView>
             </subviews>
