@@ -26,6 +26,8 @@
 		A6EFBD2D1D55B78300BB19F3 /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBD2C1D55B78300BB19F3 /* WaveView.swift */; };
 		A6EFBD2F1D55B78D00BB19F3 /* PullToRefleshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBD2E1D55B78D00BB19F3 /* PullToRefleshView.swift */; };
 		A6EFBD331D55B8F000BB19F3 /* PullToRefreshVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBD321D55B8F000BB19F3 /* PullToRefreshVC.swift */; };
+		A6F9D47E1D570B70009EFFE9 /* MSUnlockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F9D47C1D570B70009EFFE9 /* MSUnlockVC.swift */; };
+		A6F9D47F1D570B70009EFFE9 /* MSUnlockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F9D47D1D570B70009EFFE9 /* MSUnlockVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		A6EFBD2C1D55B78300BB19F3 /* WaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		A6EFBD2E1D55B78D00BB19F3 /* PullToRefleshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefleshView.swift; sourceTree = "<group>"; };
 		A6EFBD321D55B8F000BB19F3 /* PullToRefreshVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshVC.swift; sourceTree = "<group>"; };
+		A6F9D47C1D570B70009EFFE9 /* MSUnlockVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSUnlockVC.swift; sourceTree = "<group>"; };
+		A6F9D47D1D570B70009EFFE9 /* MSUnlockVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSUnlockVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +89,10 @@
 		A699F20A1D54C0C4005F7B44 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				A6EFBD231D5581B900BB19F3 /* GradientAnimation */,
 				A6EFBD211D5580F700BB19F3 /* PullToRefresh */,
 				A699F20B1D54C0C4005F7B44 /* StretchyHeader */,
+				A6EFBD231D5581B900BB19F3 /* GradientAnimation */,
+				A6F9D47B1D570B06009EFFE9 /* LockScreenAnimation */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -199,6 +204,15 @@
 			path = GradientAnimation;
 			sourceTree = "<group>";
 		};
+		A6F9D47B1D570B06009EFFE9 /* LockScreenAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A6F9D47C1D570B70009EFFE9 /* MSUnlockVC.swift */,
+				A6F9D47D1D570B70009EFFE9 /* MSUnlockVC.xib */,
+			);
+			path = LockScreenAnimation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -283,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6CD92B11D54228100A9970C /* LaunchScreen.storyboard in Resources */,
+				A6F9D47F1D570B70009EFFE9 /* MSUnlockVC.xib in Resources */,
 				A6CD92AE1D54228100A9970C /* Assets.xcassets in Resources */,
 				A6CD92AC1D54228100A9970C /* Main.storyboard in Resources */,
 				A699F20D1D54C106005F7B44 /* StretchyHeader.storyboard in Resources */,
@@ -314,6 +329,7 @@
 				A6EFBD2D1D55B78300BB19F3 /* WaveView.swift in Sources */,
 				A6EFBD2B1D55B77C00BB19F3 /* HeaderView.swift in Sources */,
 				A6EFBD271D55847B00BB19F3 /* LoadingLabel.swift in Sources */,
+				A6F9D47E1D570B70009EFFE9 /* MSUnlockVC.swift in Sources */,
 				A699F2111D54C1B8005F7B44 /* Place.swift in Sources */,
 				A6EFBD331D55B8F000BB19F3 /* PullToRefreshVC.swift in Sources */,
 				A6A256691D54738C00BF963A /* SwiftExtentions.swift in Sources */,
