@@ -16,13 +16,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
+        configureNavigationBar()
         configureStatusBar()
         return true
     }
 
-    func configureStatusBar() {
-        UIApplication.sharedApplication().statusBarStyle = .LightContent // 白色
+    // MARK: - Convenience
+    let gray = UIColor(red:0.20, green:0.20, blue:0.20, alpha:1.0)
+    
+    func configureNavigationBar() {
+        UINavigationBar.appearance().translucent = false
+        UINavigationBar.appearance().opaque = true
+        UINavigationBar.appearance().barTintColor = gray
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
     }
+    
+    func configureStatusBar() {
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        setStatusBarBackgroundColor(gray)
+    }
+    
+    func setStatusBarBackgroundColor(color: UIColor) {
+        guard let statusBar = UIApplication.sharedApplication().valueForKey("statusBarWindow")?.valueForKey("statusBar") as? UIView else {
+            return
+        }
+        statusBar.backgroundColor = color
+    }
+
     
     
     

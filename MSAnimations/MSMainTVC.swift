@@ -21,7 +21,7 @@ class MSMainTVC: UITableViewController, PullRefreshViewDelegate {
     // MARK: - Properties
     var pullRefreshView: PullRefreshView!
     let kPullRefreshViewHeight: CGFloat = UIScreen.mainScreen().bounds.size.height * 0.22
-    let items = ["MSPullToRefreshAnimation", "MSStretchyHeaderAnimation", "MSGradientVC", "MSLockScreenAnimation", "MSEraseImageAnimation"]
+    let items = ["MSPullToRefreshAnimation", "MSStretchyHeaderAnimation", "MSGradientVC", "MSLockScreenAnimation", "MSEraseImageAnimation", "MSUnderlineAnimation"] // "NavigationBarAnimation"
     
     
     // MARK: - View Life Cycle
@@ -71,8 +71,11 @@ class MSMainTVC: UITableViewController, PullRefreshViewDelegate {
             break
             
         case 4:
-//            self.navigationController?.pushViewController(eraseImageViewController(), animated: true)
             self .presentViewController(eraseImageViewController(), animated: true, completion: nil)
+            break
+            
+        case 5:
+            self .presentViewController(UnderlineVC(), animated: true, completion: nil)
             break
             
         default:

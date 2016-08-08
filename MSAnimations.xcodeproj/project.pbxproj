@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61E09A11D581383000DDBEE /* UnderlineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E099F1D581383000DDBEE /* UnderlineVC.swift */; };
+		A61E09A21D581383000DDBEE /* UnderlineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61E09A01D581383000DDBEE /* UnderlineVC.xib */; };
+		A61E09A41D58144B000DDBEE /* Underline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E09A31D58144B000DDBEE /* Underline.swift */; };
 		A699F20D1D54C106005F7B44 /* StretchyHeader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A699F20C1D54C106005F7B44 /* StretchyHeader.storyboard */; };
 		A699F20F1D54C154005F7B44 /* StretchyHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699F20E1D54C154005F7B44 /* StretchyHeaderTVC.swift */; };
 		A699F2111D54C1B8005F7B44 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699F2101D54C1B8005F7B44 /* Place.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A61E099F1D581383000DDBEE /* UnderlineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineVC.swift; sourceTree = "<group>"; };
+		A61E09A01D581383000DDBEE /* UnderlineVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnderlineVC.xib; sourceTree = "<group>"; };
+		A61E09A31D58144B000DDBEE /* Underline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Underline.swift; sourceTree = "<group>"; };
 		A699F20C1D54C106005F7B44 /* StretchyHeader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StretchyHeader.storyboard; sourceTree = "<group>"; };
 		A699F20E1D54C154005F7B44 /* StretchyHeaderTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StretchyHeaderTVC.swift; sourceTree = "<group>"; };
 		A699F2101D54C1B8005F7B44 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
@@ -92,9 +98,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A61E099E1D581331000DDBEE /* UnderlineAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A61E099F1D581383000DDBEE /* UnderlineVC.swift */,
+				A61E09A01D581383000DDBEE /* UnderlineVC.xib */,
+				A61E09A31D58144B000DDBEE /* Underline.swift */,
+			);
+			path = UnderlineAnimation;
+			sourceTree = "<group>";
+		};
+		A61E09A51D58187B000DDBEE /* NavigationBarAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationBarAnimation;
+			sourceTree = "<group>";
+		};
 		A699F20A1D54C0C4005F7B44 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				A61E09A51D58187B000DDBEE /* NavigationBarAnimation */,
+				A61E099E1D581331000DDBEE /* UnderlineAnimation */,
 				A6E06B831D5761BF00DC5CA7 /* EraseImageAnimation */,
 				A6EFBD211D5580F700BB19F3 /* PullToRefresh */,
 				A699F20B1D54C0C4005F7B44 /* StretchyHeader */,
@@ -320,6 +345,7 @@
 				A6CD92AE1D54228100A9970C /* Assets.xcassets in Resources */,
 				A6CD92AC1D54228100A9970C /* Main.storyboard in Resources */,
 				A699F20D1D54C106005F7B44 /* StretchyHeader.storyboard in Resources */,
+				A61E09A21D581383000DDBEE /* UnderlineVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +371,9 @@
 				A6A256631D546D6600BF963A /* GlobalFunctions.swift in Sources */,
 				A6EFBD2F1D55B78D00BB19F3 /* PullToRefleshView.swift in Sources */,
 				A6E06B881D5761D400DC5CA7 /* eraseImageViewController.m in Sources */,
+				A61E09A11D581383000DDBEE /* UnderlineVC.swift in Sources */,
 				A6A256661D546EED00BF963A /* PullRefreshView.swift in Sources */,
+				A61E09A41D58144B000DDBEE /* Underline.swift in Sources */,
 				A6EFBD2D1D55B78300BB19F3 /* WaveView.swift in Sources */,
 				A6EFBD2B1D55B77C00BB19F3 /* HeaderView.swift in Sources */,
 				A6EFBD271D55847B00BB19F3 /* LoadingLabel.swift in Sources */,
